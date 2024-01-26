@@ -32,6 +32,7 @@ export function displayRepositoryList(repositories) {
     fetch('./component/repostitoryList/repositorylist.html')
         .then(response => response.text())
         .then(data => {
+            console.log(data)
             document.getElementById('repositoryListContainer').innerHTML = '';
 
             // Update repository list with actual data
