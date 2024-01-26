@@ -15,7 +15,7 @@ function showLoader(loaderId) {
         loader.style.display = 'flex'; // Flex display to center the loader
     }
 }
-// Function to hide loader
+
 function hideLoader(loaderId) {
     const loader = document.getElementById(loaderId);
     if (loader) {
