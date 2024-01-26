@@ -32,7 +32,7 @@ export function displayRepositoryList(repositories) {
     fetch('./component/repositorylist/repositorylist.html')
         .then(response => response.text())
         .then(data => {
-            console.log(data)
+            
             document.getElementById('repositoryListContainer').innerHTML = '';
 
             // Update repository list with actual data
@@ -78,7 +78,7 @@ async function fetchRepositories(username, page, perPage) {
     try {
         // Display loader while fetching repositories
         showLoader('repositoryListLoader');
-        console.log('fetch reposio')
+        
 
         // Fetch user data including the total number of repositories
         const userData = await apiService.getUser(username);
@@ -89,7 +89,7 @@ async function fetchRepositories(username, page, perPage) {
         // Fetch repository list using the Apiservice
         const repositories = await apiService.getUserRepo(username, page, perPage);
         
-        console.log(repositories)
+       
         // Load Repository List Component
         displayRepositoryList(repositories);
 
