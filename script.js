@@ -87,7 +87,8 @@ async function fetchRepositories(username, page, perPage) {
 
         // Fetch repository list using the Apiservice
         const repositories = await apiService.getUserRepo(username, page, perPage);
-
+        
+        console.log(repositories)
         // Load Repository List Component
         displayRepositoryList(repositories);
 
