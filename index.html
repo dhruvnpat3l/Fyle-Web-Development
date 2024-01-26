@@ -1,0 +1,61 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Custom CSS -->
+    
+</head>
+<body>
+
+    <div class="container mt-3">
+        
+        <h2 class="text-center">GitHub Repositories</h2>
+        <!-- Username Input Box -->
+        <div class="input-group mb-3">
+            <input type="text" id="usernameInput" class="form-control " placeholder="Enter GitHub Username">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="fetchButton">Search</button>
+            </div>
+        </div>
+
+        <!-- Profile Container -->
+        <div id="profileContainer"></div>
+
+        <!-- Repository List Container -->
+        <!-- Buttons for choosing repositories per page -->
+        <div id="repoPerPageContainer"></div>
+
+        <div id="repositoryListContainer" class="row"></div>
+
+        <!-- Pagination Controls -->
+        <div id="paginationContainer"></div>
+
+        <!-- Loader Containers -->
+        <div class="loader-container" id="userDataLoader">
+            <div class="loader"></div>
+        </div>
+
+        <div class="loader-container" id="repositoryListLoader">
+            <div class="loader"></div>
+        </div>
+        
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Your Apiservice class -->
+    <script src="./service/apiService.js"></script>
+    <!-- Your JavaScript -->
+    <script src="script.js" type="module"></script>
+    <script src="./component/profile/profile.js" type="module"></script>
+   
+</body>
+</html>
