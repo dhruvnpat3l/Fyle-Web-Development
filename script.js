@@ -29,7 +29,7 @@ export function displayRepositoryList(repositories) {
     showLoader('repositoryListLoader');
     
     // Placeholder for loading the repository list component
-    fetch('/component/repostitoryList/repositoryList.html')
+    fetch('./component/repostitoryList/RepositoryList.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('repositoryListContainer').innerHTML = '';
