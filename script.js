@@ -205,7 +205,7 @@ function initializePagination() {
 
 // Function to initialize and display Repo Per Page controls
 function initializeRepoPerPage() {
-    fetch('./Components/repositoryPerPage/repositoryPerPage.html')
+    fetch('./component/repositoryfilter/repositoryfilter.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('repoPerPageContainer').innerHTML = data;
