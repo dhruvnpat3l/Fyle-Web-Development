@@ -1,7 +1,7 @@
 // script.js
 import { displayUserProfile } from "/component/profile/profile.js";
 // Create an instance of Apiservice
-import {Apiservice} from '/services/apiService.js'
+import Apiservice from '/services/apiService.js'
 const apiService = new Apiservice();
 
 // Variables for pagination
