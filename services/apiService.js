@@ -44,4 +44,4 @@ class Apiservice {
     
 }
 
-export default {Apiservice}
+export default Apiservice
