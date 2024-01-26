@@ -3,7 +3,7 @@ import { displayUserProfile } from "/component/profile/profile.js";
 // Create an instance of Apiservice
 import Apiservice from '/services/apiService.js'
 const apiService = new Apiservice();
-
+  
 // Variables for pagination
 let currentPage = 1;
 let repositoriesPerPage = 10; // Default number of repositories per page
