@@ -77,6 +77,7 @@ async function fetchRepositories(username, page, perPage) {
     try {
         // Display loader while fetching repositories
         showLoader('repositoryListLoader');
+        console.log('fetch reposio')
 
         // Fetch user data including the total number of repositories
         const userData = await apiService.getUser(username);
