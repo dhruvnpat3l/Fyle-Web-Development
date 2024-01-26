@@ -38,6 +38,7 @@ export function displayRepositoryList(repositories) {
             repositories.forEach(repo => {
                 const repoItem = document.createElement('div');
                 repoItem.innerHTML = data;
+                
 
                 // Update the HTML elements with repository information
                 repoItem.querySelector('#repoName').textContent = repo.name;
