@@ -27,7 +27,7 @@ function hideLoader(loaderId) {
 // Function to display repository list
 export function displayRepositoryList(repositories) {
     showLoader('repositoryListLoader');
-     
+      
     // Placeholder for loading the repository list component
     fetch('./component/repositorylist/repositorylist.html')
         .then(response => response.text())
