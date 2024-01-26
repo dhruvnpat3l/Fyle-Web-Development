@@ -184,7 +184,7 @@ function initializePagination() {
             if (!(currentPage >1)){
                 prePageButton.classList.add('disabled');
             }
-
+ 
             if (hasMoreRepositories) {
                 nextPageButton.addEventListener('click', function () {
                     currentPage++;
