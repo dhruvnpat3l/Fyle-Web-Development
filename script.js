@@ -70,7 +70,7 @@ export function displayRepositoryList(repositories) {
             console.error('Error loading repository list component:', error);
             hideLoader('repositoryListLoader');
         });
-}
+} 
 
 
 // Function to fetch repositories based on page number
