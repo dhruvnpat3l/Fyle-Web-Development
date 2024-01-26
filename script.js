@@ -1,5 +1,5 @@
 // script.js
-import { displayUserProfile } from "/component/profile/profile";
+import { displayUserProfile } from "/component/profile/profile.js";
 // Create an instance of Apiservice
 const apiService = new Apiservice();
 
