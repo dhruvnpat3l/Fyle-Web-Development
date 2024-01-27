@@ -38,3 +38,7 @@ To run this project locally on your machine, follow these steps:
  ## Live Demo
 
 Check out the live demo [here](https://githubrepofind.vercel.app/) .
+
+##  📷 Screenshots
+
+<img src='./image/screenshot.png' height="400" >
